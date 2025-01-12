@@ -1,0 +1,8 @@
+Professor: Mario Souto
+
+### sites
+latentflip.com (loupe) (testes javascript e execucao, visualizar a ordem de processamento)
+
+### extensoes
+quokka: extensao que executa codigo javascript e typescript e exibe os resultados em tempo real
+github copilot: extensao vscode que sugere e completa codigos 

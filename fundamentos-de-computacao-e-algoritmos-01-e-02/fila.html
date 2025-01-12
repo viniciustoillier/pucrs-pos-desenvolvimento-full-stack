@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Browser</title>
+</head>
+
+<body>
+    <script>
+        console.log('[Fila/Queue]');
+        // Qualquer tipo de dado
+        // Uma atrás da outra, ordem importa
+        // Quem entra primeiro, sai primeiro
+        var fila = [
+            'scripts.js',
+            'style.css',
+            'imagem.png'
+        ];
+        
+        // Adiciona no no fim da fila
+        fila.push('doguinho.png')
+        // Remove o primeiro da fila
+        fila.shift();
+        // - enqueue: enfileirar
+        // - dequeue: desenfileirar
+
+        class Queue { // Class: Receita para criar objetos
+            constructor() {
+                this.data = [];
+            }
+            print() {
+                console.log(this.data)
+            }
+            enqueue(item) {
+                this.data.push(item)
+            }
+            dequeue() {
+                this.data.shift();
+            }
+        }
+
+        // Design do código First
+        var requests = new Queue();
+        // Open Closed
+        // Open: Aberto pra extensão
+        // Closed: Fechado pra modificação
+        requests.enqueue('scripts.js');
+        requests.print();
+        requests.dequeue();
+        requests.enqueue('style.css');
+        requests.enqueue('imagem.png');
+        requests.enqueue('doguinho.png');
+        requests.print();
+
+    </script>
+</body>
+
+</html>

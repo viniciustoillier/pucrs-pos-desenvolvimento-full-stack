@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Browser</title>
+</head>
+
+<body>
+    <script>
+        // LIFO (Last In First Out) - Stack
+        console.log('Pilha/Stack');
+
+        class BrowserHistoryStack {
+            constructor() {
+                this.cursor = 0;
+                this.data = [];
+            }
+            push(item) { 
+                this.cursor = this.cursor + 1;
+                this.data.push(item);
+            }
+            back() {
+                this.cursor = this.cursor - 1;
+                this.data.pop();
+            }
+            print() {
+                console.log('cursor', this.cursor)
+                console.log('itens atuais', this.data)
+            }
+        }
+        
+        const history = new BrowserHistoryStack();
+
+        history.push('https://google.com')
+        history.push('https://youtube.com')
+        history.push('https://facebook.com')
+        history.print();
+        history.back()
+        history.print()
+
+    </script>
+</body>
+
+</html>
