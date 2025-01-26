@@ -1,0 +1,17 @@
+Professor: Alessandro Valério
+
+# Conceitos
+- ENCAPSULAMENTO
+-> Redução de complexidade / Proteção de dados
+- ABSTRAÇÃO
+-> Redução de complexidade / Maior Reuso
+- HERANÇA
+-> Eliminar Redundâncias no código
+- POLIMORFISMO
+-> Eliminar lógica desnecessária no código 
+
+# Syntax Sugar: 
+- Sintaxe que torna as construcões mais fáceis de serem lidas e escritas
+
+-> todo objeto js possui o atributp constructor
+
